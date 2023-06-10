@@ -1,0 +1,1044 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+ body{
+  width: 100vw;
+  height: 100vh;
+ }
+
+ .main{
+  width: 100vw;
+ }
+
+  /* Header Styling */
+  header {
+    width: 100vw;
+    padding: 5px 5px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .header_img {
+    width: 6%;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav_btn {
+    padding: 0.35em 1em;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  
+  .btn1 {
+    border: 3px solid #1ca76c;
+    color: #1ca76c;
+    font-weight: bold;
+  }
+  .btn1:hover {
+    background-color: #1ca76c;
+    color: white;
+  }
+  .btn2 {
+    background-color: #1ca76c;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #1ca76c;
+  }
+  .btn2:hover {
+    background-color: white;
+    color: #1ca76c;
+  }
+  
+  /* Main */
+  .house {
+    /* position: relative; */
+    /* display: none; */
+    height: fit-content;
+    /* background-color: red; */
+  }
+  main {
+    height: 100vh;
+    /* background-color: blue; */
+  }
+  .house.effect {
+    height: 100vh;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.3;
+  }
+  .house.thing {
+    height: 120vh;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.3;
+  }
+  .section-text {
+    margin-top: 3em;
+  }
+  
+  .section1 {
+    width: 90%;
+    /* background-color: rgb(17, 255, 0); */
+  }
+  .section2 {
+    width: 90%;
+    /* background-color: red; */
+  }
+  .img-sct {
+    width: 100%;
+  }
+  
+  .section .section-text h1,
+  h2,
+  h3 {
+    text-align: right;
+  }
+  
+  .section .section-text h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .section .section-text h2 {
+    font-weight: bold;
+    color: #ffc800;
+    font-size: 2.5rem;
+  }
+  .section .section-text h1 {
+    font-weight: bold;
+    color: #1ca76c;
+    font-size: 5rem;
+    /* margin-top: -15px; */
+    margin: 0;
+  }
+  
+  .section .section-text p {
+    font-size: 0.8rem;
+    text-align: right;
+    font-weight: 550;
+  }
+  .section .section-text .p2 {
+    font-size: 0.8rem;
+    text-align: right;
+    width: 100%;
+  }
+  .btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  .btn3 {
+    background-color: #1ca76c;
+    padding: 0.75em 3.5em;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid #1ca76c;
+    font-weight: bold;
+    margin-top: 1em;
+    text-decoration: none;
+  }
+
+
+  /* what we do section */
+
+ .sub-header-mod{
+  padding: 45px;
+ }
+
+
+  .what-we-do-main-container{
+    margin: 2.8rem;
+    padding: 0.5rem;
+  }
+  .wwdheader{
+    align-self: center;
+    margin-right: 10px;
+  }
+
+  .wwdheader h2{
+    position: relative;
+    font-size: 2vw;
+    color: #1ca76c;
+    -webkit-text-stroke: 0.2vw #1ca76c;
+    text-transform: uppercase;
+  }
+
+  .wwdheader h3{
+    position: relative;
+  }  
+
+  .wwdheader h2::before{
+    content: attr(data-text );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    -webkit-text-stroke: 0vw #1ca76c;
+    border-right: 2px solid #fff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+
+  @keyframes animate{
+    0%,10%,100%{
+      width: 0;
+    }
+    70%,90%{
+      width: 100%;
+    }
+  }
+
+  .what-we-do{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 0.4fr;
+    background-color: bisque;
+    grid-template-areas: 
+    "header header header"
+    "web mobile marketing"
+    "aboutus aboutus aboutus";
+    gap: 0.7rem;
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+    width: 90vw;
+  }
+  .h2-we-do{
+    text-align: center;
+  }
+  .what-we-do-header{
+    grid-area: header;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .web-development{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: web;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  }
+
+  .web-development:hover{
+    height: 400px;
+  }
+
+  .image-web{
+    top: 20px;
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .web-development:hover .image-web{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+
+  .image-web img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content-web{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    height: 35px;
+    overflow: hidden;
+  }
+
+  .web-development:hover .content-web{
+     top: 130px;
+     height: 250px;
+  }
+
+  .web-development .content-web h2{
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .h22{
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .web-development .content-web p{
+    font-size: 1.05em;
+  }
+
+  .mobile-development{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: mobile;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-development:hover{
+    height: 400px;    
+  }
+
+  .mobile-development:hover .image-web{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-development:hover .content-web{
+    top: 130px;
+    height: 250px;
+ }
+
+  .digital-marketing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: marketing;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  }
+
+  .digital-marketing:hover{
+    height: 400px;  
+  }
+
+  .digital-marketing:hover .image-web{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+
+  .digital-marketing:hover .content-web{
+    top: 130px;
+    height: 250px;
+ }
+
+  .what-we-do-about-us{
+    grid-area: aboutus;
+    background-color: #fff;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+  }
+
+  .h2-we-do{
+    color: #1ca76c;
+    font-weight: 300;
+  }
+
+  .green{
+    color: #1ca76c;
+  }
+
+  .gold{
+    color: #ffc800;
+  }
+
+
+  .previous-works{
+    display: grid;
+    background-color: #1ca76c;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+    padding: 0.7rem;
+    grid-template-areas: 
+    "portfolio portfolio"
+    "health capa"
+    "jooly liberty"
+    "impactt qapabli"
+    "girls tidy";
+    border-radius: o.7rem;
+    gap: 0.3rem;
+    padding: 3rem;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+    width: 90vw;
+  }
+
+  .portfolio-header-container{
+    grid-area: portfolio;
+    display: flex;
+    width: 100vw;
+    /* height: 50px; */
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .portfolio-header-container h2{
+    color: #fff;
+    font-weight: 300;
+    margin-right: 240px;
+  }
+
+  .capahealth{
+    position: relative;
+    padding: 0.8rem;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/capacitybayhealth.png.jpg") no-repeat;
+    background-size: cover; */
+    background-color: #fff;
+    opacity: 0.8;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    grid-area: health;
+    border-radius: 0.4rem;
+    /* background-color: #fff; */
+    /* padding: 0.3rem; */
+  }
+
+  .contenttt{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .capahealth:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .contenttt h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+  }
+
+  .contenttt h3{
+    font-size: 1em;
+    color: #ffc800;
+    z-index: 1;
+  }
+
+  .contenttt p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .contenttt a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    color: #ffc800;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .capa{
+    grid-area: capa;
+    border-radius: 0.4rem;
+    /* background-color: #fff; */
+    padding: 0.8rem;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/capacitybay.png.jpg") no-repeat;
+    background-size: cover; */
+    opacity: 0.8;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .capa:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .jooly{
+    grid-area: jooly;
+    border-radius: 0.4rem;
+    /* background-color: #ffc800;
+    padding: 0.3rem; */
+    padding: 0.8rem;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/joolydiagnostic.png.jpg") no-repeat;
+    background-size: cover; */
+    opacity: 0.8;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .jooly:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .liberty{
+    grid-area: liberty;
+    /* border-radius: 0.4rem; */
+    /* background-color: #ffc800; */
+    padding: 0.8rem;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/libertypharmacy.png.jpg") no-repeat;
+    background-size: cover; */
+    opacity: 0.8;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .liberty:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .impact{
+    grid-area: impactt;
+    border-radius: 0.7rem;
+    padding: 0.8rem;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/impactecq.png.jpg") no-repeat;
+    background-size: cover; */
+    opacity: 0.8;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .impact:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .qapabli{
+    grid-area: qapabli;
+    /* border-radius: 0.4rem;
+    background-color: #fff; */
+    padding: 0.8rem;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/qapabli.png.jpg") no-repeat;
+    background-size: cover; */
+    opacity: 0.8;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .qapabli:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .girls{
+    grid-area: girls;
+    padding: 0.8rem;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/girlsintech.png.jpg") no-repeat;
+    background-size: cover; */
+    opacity: 0.8;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .girls:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .tidy{
+    grid-area: tidy;
+    padding: 10px;
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: url("images/tidycal.png.jpg") no-repeat;
+    background-size: cover; */
+    opacity: 0.8;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .tidy:hover .contenttt{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+  @keyframes rotate {
+    from{
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+  .cursive{
+     animation-name: rotate;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+  }
+
+
+  /* media query */
+  @media screen and (max-width: 426px) {
+    header {
+      justify-content: space-between;
+      font-size: 14px;
+    }
+    .header_img {
+      width: 10%;
+    }
+    .nav_btn {
+      padding: 0.2em;
+      border-radius: 10px;
+    }
+    .section .section-text h1,
+    h2,
+    h3 {
+      text-align: left;
+    }
+  
+    .section .section-text h3 {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .section .section-text h2 {
+      font-weight: bold;
+      color: #ffc800;
+      font-size: 2rem;
+    }
+    .section .section-text h1 {
+      font-weight: bold;
+      color: #1ca76c;
+      font-size: 4rem;
+      /* margin-top: -15px; */
+      margin: 0;
+    }
+  
+    .section .section-text p {
+      font-size: 0.6rem;
+      text-align: left;
+      width: 90%;
+    }
+    .section .section-text .p2 {
+      font-size: 0.6rem;
+      text-align: left;
+      width: 90%;
+    }
+    .btn-div {
+      justify-content: left;
+    }
+    .btn3 {
+      padding: 0.75em 2.5em;
+      margin-top: 0em;
+    }
+    #login {
+      width: 90%;
+      /* background-color: blue; */
+    }
+    .house.effect {
+      height: fit-content;
+    }
+    .reg {
+      width: 95%;
+    }
+    .for-name {
+      flex-direction: column;
+    }
+    .house.thing {
+      height: fit-content;
+    }
+    .reg.displayForm {
+      top: 55%;
+    }
+    .lone h1 {
+      font-size: 1.5rem;
+    }
+    .hone h1 {
+      font-size: 1.5rem;
+    }
+    .login-form .input div label {
+      font-size: 12px;
+    }
+
+    .what-we-do{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 1fr 0.4fr;
+      background-color: bisque;
+      grid-template-areas: 
+      "header"
+      "web "
+      "mobile"
+      "marketing"
+      "aboutus";
+      gap: 0.7rem;
+      padding: 0.5rem;
+      margin-left: 0;
+      margin-right: 15px;
+      border-radius: 0.2rem;
+      width: 80vw;
+    }
+
+    .previous-works{
+      display: grid;
+      background-color: #1ca76c;
+      grid-template-columns: 1fr;
+      grid-template-rows:0.1fr 1fr 1fr 1fr 1fr;
+      padding: 0.7rem;
+      grid-template-areas:
+      "portfolio" 
+      "health "
+      "capa"
+      "jooly"
+      "liberty"
+      "impactt"
+      "qapabli"
+      "girls"
+      "tidy";
+      border-radius: o.7rem;
+      gap: 0.3rem;
+      padding: 0.5rem;
+      margin-left: 0;
+      margin-right: 15px;
+      border-radius: 0.2rem;
+      width: 80vw;
+    }
+
+    .what-we-do-header{
+      grid-area: header;
+      background-color: #fff;
+      border-radius: 0.7rem;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      width: 75vw;
+    }
+    .web-development,.mobile-development,.digital-marketing{
+      width: 75vw;
+    }
+    .capahealth,.capa,.jooly,.liberty,.impact,.qapabli,.girls,.tidy{
+      width: 60vw;
+    }
+
+    .main{
+      width: 80vw;
+      margin-right: 20px;
+     }
+
+     .nav-menu{
+      margin-right: 20px;
+     }
+
+     .block-h2{
+      display: block;
+      font-size: 50px;
+     }
+
+     .wwdheader{
+      display: block;
+      width: 80vw;
+     }
+
+     .what-we-do-main-container{
+      margin-right: 20px;
+     }
+
+     .portfolio-header-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+     .portfolio-header-container h2{
+      margin-left: 150px;
+      display: block;
+     }
+
+     
+     .tidy p{
+      margin-left: 40px;
+     }
+     
+  }
+  
+  @media screen and (max-width: 321px) {
+    .nav_btn {
+      padding: 0.1em;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .section .section-text h1,
+    h2,
+    h3 {
+      text-align: left;
+    }
+  
+    .section .section-text h3 {
+      font-weight: bold;
+      font-size: 0.8rem;
+    }
+    .section .section-text h2 {
+      font-size: 1.3rem;
+    }
+    .section .section-text h1 {
+      font-size: 3rem;
+      /* margin-top: -13px; */
+    }
+  
+    .btn3 {
+      padding: 0.45em 1em;
+      margin-top: 0em;
+    }
+    #login {
+      width: 95%;
+      /* background-color: blue; */
+    }
+    .login-form .input {
+      gap: 0;
+      font-size: 1px;
+    }
+    .login-form .input div label {
+      font-size: 12px;
+    }
+    .house.thing {
+      height: 200vh;
+    }
+    .house.effect {
+      height: fit-content;
+    }
+    .what-we-do{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 1fr 0.4fr;
+      background-color: bisque;
+      grid-template-areas: 
+      "header"
+      "web "
+      "mobile"
+      "marketing"
+      "aboutus";
+      gap: 0.7rem;
+      padding: 0.5rem;
+      margin-left: 0;
+      margin-right: 15px;
+      border-radius: 0.2rem;
+      width: 80vw;
+    }
+
+    .previous-works{
+      display: grid;
+      background-color: #1ca76c;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+      padding: 0.7rem;
+      grid-template-areas:
+      "portfolio" 
+      "health "
+      "capa"
+      "jooly"
+      "liberty"
+      "impactt"
+      "qapabli"
+      "girls"
+      "tidy";
+      border-radius: o.7rem;
+      gap: 0.3rem;
+      padding: 0.5rem;
+      margin-left: 0;
+      margin-right: 15px;
+      border-radius: 0.2rem;
+      width: 80vw;
+    }
+
+    .what-we-do-header{
+      grid-area: header;
+      background-color: #fff;
+      border-radius: 0.7rem;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      width: 75vw;
+    }
+
+    .web-development,.mobile-development,.digital-marketing{
+      width: 75vw;
+    }
+    .capahealth,.capa,.jooly,.liberty,.impact,.qapabli,.girls,.tidy{
+      width: 60vw;
+    }
+
+    .main{
+      width: 80vw;
+      margin-right: 20px;
+     }
+
+     .nav-menu{
+      margin-right: 20px;
+     }
+
+     .block-h2{
+      display: block;
+      font-size: 50px;
+     }
+
+     .wwdheader{
+      display: block;
+      width: 80vw;
+     }
+
+     .what-we-do-main-container{
+      margin-right: 20px;
+     }
+
+     .portfolio-header-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     
+     .portfolio-header-container h2{
+      margin-left: 150px;
+      display: block;
+     }
+
+     .tidy p{
+      margin-left: 40px;
+     }
+  }
+  
